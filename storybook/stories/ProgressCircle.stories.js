@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, TouchableHighlight} from 'react-native';
+import {View, Text, TouchableHighlight} from 'react-native';
 
 import {State, Store} from '@sambego/storybook-state';
 import Container from '../components/Container';
@@ -62,8 +62,9 @@ storiesOf('ProgressCircle', module)
                 store.set({
                   circleValue3: Math.floor(Math.random() * Math.floor(100)),
                 });
-              }}
-            />
+              }}>
+              <Text>Change Value</Text>
+            </TouchableHighlight>
           </View>
         )}
       </State>

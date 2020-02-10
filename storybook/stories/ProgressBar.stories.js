@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, TouchableHighlight} from 'react-native';
+import {View, Text, TouchableHighlight} from 'react-native';
 
 import {State, Store} from '@sambego/storybook-state';
 import Container from '../components/Container';
@@ -75,8 +75,9 @@ storiesOf('ProgressBar', module)
                 store.set({
                   value3: Math.floor(Math.random() * Math.floor(100)),
                 });
-              }}
-            />
+              }}>
+              <Text>Change Value</Text>
+            </TouchableHighlight>
 
             <TouchableHighlight
               type="outlined"
@@ -87,8 +88,9 @@ storiesOf('ProgressBar', module)
                 store.set({
                   visible2: !state.visible2,
                 });
-              }}
-            />
+              }}>
+              <Text>Hide / Show Animate</Text>
+            </TouchableHighlight>
           </View>
         )}
       </State>
