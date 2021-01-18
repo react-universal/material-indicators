@@ -65,7 +65,7 @@ storiesOf('ProgressBar', module)
         indcatorStartPosition={100}
         trackStyle={{marginTop: 20}}
         color={'#009688'}
-        trackColor={'#b2dfdb'}
+        trackColor={'#d8d8d8'}
         animationDuration={2000}
       />
     </Container>
@@ -149,7 +149,7 @@ storiesOf('ProgressBar', module)
           determinate
           value={50}
           color={'#009688'}
-          trackColor={'#b2dfdb'}
+          trackColor={'#d8d8d8'}
           animationDuration={500}
           trackStyle={{marginBottom: 40}}
           visible
