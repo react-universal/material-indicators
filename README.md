@@ -81,18 +81,19 @@ export default class App extends Component {
 
 #### Props
 
-| Name                  | Description                                                      | Type   | Default |
-| --------------------- | ---------------------------------------------------------------- | ------ | ------- |
-| animationDuration     | Length of each animation loop in ms                              | number | 1000    |
-| color                 | Color of bar                                                     | string |         |
-| determinate           | Whether bar continues to animate or not                          | bool   |         |
-| easing                | Easing function for bar animation                                | func   |         |
-| height                | Height of track and indicator                                    | number | 4       |
-| indcatorStartPosition | Where the indicator starts before the animation begins           | number | 0       |
-| style                 | Styles root element                                              | object |         |
-| trackStyle            | Styles track containing the indicator                            | object |         |
-| value                 | Percent out of 100 the indicator should fill in determinate mode | number |         |
-| visible               | Whether bar is visible or not                                    | bool   |         |
+| Name                  | Description                                                      | Type   | Default         |
+| --------------------- | ---------------------------------------------------------------- | ------ | --------------- |
+| animationDuration     | Length of each animation loop in ms                              | number | 1000            |
+| color                 | Color of bar                                                     | string |                 |
+| trackColor            | Track color of bar                                               | string | color.fade(0.4) |
+| determinate           | Whether bar continues to animate or not                          | bool   |                 |
+| easing                | Easing function for bar animation                                | func   |                 |
+| height                | Height of track and indicator                                    | number | 4               |
+| indcatorStartPosition | Where the indicator starts before the animation begins           | number | 0               |
+| style                 | Styles root element                                              | object |                 |
+| trackStyle            | Styles track containing the indicator                            | object |                 |
+| value                 | Percent out of 100 the indicator should fill in determinate mode | number |                 |
+| visible               | Whether bar is visible or not                                    | bool   |                 |
 
 ### Progress Circle
 
