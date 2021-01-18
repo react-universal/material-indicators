@@ -7,6 +7,7 @@ import {default as colorTool} from 'color';
 export default class ProgressBar extends PureComponent {
   static propTypes = {
     color: PropTypes.string,
+    trackColor: PropTypes.string,
     height: PropTypes.number,
     trackStyle: PropTypes.object,
     determinate: PropTypes.bool,
@@ -140,7 +141,7 @@ export default class ProgressBar extends PureComponent {
       trackOpacity,
     } = this.state;
 
-    const trackColor = colorTool(color)
+    const trackColor = this.props.trackColor || colorTool(color)
       .fade(0.4)
       .string();
     const indicatorColor = color;

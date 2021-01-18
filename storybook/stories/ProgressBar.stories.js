@@ -53,6 +53,21 @@ storiesOf('ProgressBar', module)
         animationDuration={4000}
         height={10}
       />
+      <ProgressBar
+        visible
+        indcatorStartPosition={100}
+        trackStyle={{marginTop: 20}}
+        color={'#E91E63'}
+        trackColor={'#f8bbd0'}
+      />
+      <ProgressBar
+        visible
+        indcatorStartPosition={100}
+        trackStyle={{marginTop: 20}}
+        color={'#009688'}
+        trackColor={'#b2dfdb'}
+        animationDuration={2000}
+      />
     </Container>
   ))
   .add('Determinate', () => (
@@ -120,6 +135,24 @@ storiesOf('ProgressBar', module)
           trackStyle={{marginBottom: 40}}
           visible
           height={5}
+        />
+        <ProgressBar
+          determinate
+          value={25}
+          color={'#E91E63'}
+          trackColor={'#f8bbd0'}
+          animationDuration={2000}
+          trackStyle={{marginBottom: 40}}
+          visible
+        />
+          <ProgressBar
+          determinate
+          value={50}
+          color={'#009688'}
+          trackColor={'#b2dfdb'}
+          animationDuration={500}
+          trackStyle={{marginBottom: 40}}
+          visible
         />
       </View>
     </Container>
